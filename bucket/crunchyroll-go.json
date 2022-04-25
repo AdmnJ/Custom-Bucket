@@ -4,7 +4,7 @@
     "homepage": "https://github.com/ByteDream/crunchyroll-go",
     "checkver": {
         "url": "https://github.com/ByteDream/crunchyroll-go/releases/latest",
-        "regex": "v(?<version>[\\d\\w.]+)/crunchy-v(?<short>[\\d.]+).*\\.exe"
+        "regex": "crunchy-v(?<short>[\\d.]+).*\\.exe"
         },
 
     "license": "LGPL-3.0 License",
@@ -32,17 +32,17 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/ByteDream/crunchyroll-go/releases/download/$Version/crunchy-$Version_windows.exe"
+                "url": "https://github.com/ByteDream/crunchyroll-go/releases/download/$matchShort/crunchy-$Version_windows.exe"
             }
         },
         "bin": [
-            "crunchy-v$Version_windows.exe",
+            "crunchy-v$matchShort_windows.exe",
             [
-                "crunchy-v$Version_windows.exe",
+                "crunchy-v$matchShort_windows.exe",
                 "crunchy"
             ],
             [
-                "crunchy-v$Version_windows.exe",
+                "crunchy-v$matchShort_windows.exe",
                 "crunchyroll-go"
             ]
         ]
