@@ -1,10 +1,10 @@
 {
-    "version": "2.0.0",
+    "version": "v2.0.0",
     "description": "A Go library & cli for the undocumented crunchyroll api. To use it, you need a crunchyroll premium account to for full (api) access.",
     "homepage": "https://github.com/ByteDream/crunchyroll-go",
     "checkver": {
-        "url": "https://github.com/ByteDream/crunchyroll-go/releases/latest",
-        "regex": "crunchy-v(?<short>[\\d.]+).*\\.exe"
+        "url": "https://smartrelease.bytedream.org/github/ByteDream/crunchyroll-go/crunchy-%7Btag%7D_windows.exe",
+        "regex": "crunchy-(?<short>[\\d.]+).*\\_windows.exe"
         },
 
     "license": "LGPL-3.0 License",
@@ -15,7 +15,7 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/ByteDream/crunchyroll-go/releases/download/v2.0.0/crunchy-v2.0.0_windows.exe"
+            "url": "https://smartrelease.bytedream.org/github/ByteDream/crunchyroll-go/crunchy-%7Btag%7D_windows.exe"
         }
     },
     "bin": [
@@ -32,17 +32,17 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/ByteDream/crunchyroll-go/releases/download/$matchShort/crunchy-$Version_windows.exe"
+                "url": "https://smartrelease.bytedream.org/github/ByteDream/crunchyroll-go/crunchy-%7Btag%7D_windows.exe"
             }
         },
         "bin": [
-            "crunchy-v$matchShort_windows.exe",
+            "crunchy-$matchShort_windows.exe",
             [
-                "crunchy-v$matchShort_windows.exe",
+                "crunchy-$matchShort_windows.exe",
                 "crunchy"
             ],
             [
-                "crunchy-v$matchShort_windows.exe",
+                "crunchy-$matchShort_windows.exe",
                 "crunchyroll-go"
             ]
         ]
