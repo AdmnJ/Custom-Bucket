@@ -4,7 +4,7 @@
     "homepage": "https://github.com/ByteDream/crunchyroll-go",
     "checkver": {
         "url": "https://smartrelease.bytedream.org/github/ByteDream/crunchyroll-go/crunchy-%7Btag%7D_windows.exe",
-        "regex": "crunchy-(?<short>[\\d.]+).*\\_windows.exe"
+        "regex": "\/releases\/tag\/(?:v|V)?([\d.]+)"
         },
 
     "license": "LGPL-3.0 License",
@@ -36,13 +36,13 @@
             }
         },
         "bin": [
-            "crunchy-$matchShort_windows.exe",
+            "crunchy-$Version_windows.exe",
             [
-                "crunchy-$matchShort_windows.exe",
+                "crunchy-$Version_windows.exe",
                 "crunchy"
             ],
             [
-                "crunchy-$matchShort_windows.exe",
+                "crunchy-$Version_windows.exe",
                 "crunchyroll-go"
             ]
         ]
