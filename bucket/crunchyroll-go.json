@@ -2,6 +2,7 @@
     "version": "v2.0.0",
     "description": "A Go library & cli for the undocumented crunchyroll api. To use it, you need a crunchyroll premium account to for full (api) access.",
     "homepage": "https://github.com/ByteDream/crunchyroll-go",
+    "checkver": "github",
     "license": "LGPL-3.0 License",
     "suggest": {
         "ffmpeg": "ffmpeg",
@@ -24,7 +25,6 @@
             "crunchyroll-go"
         ]
     ],
-    "checkver": "github",
     "autoupdate": {
         "architecture": {
             "64bit": {
