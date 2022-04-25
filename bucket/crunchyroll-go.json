@@ -12,7 +12,17 @@
             "url": "https://github.com/ByteDream/crunchyroll-go/releases/download/v2.1.0/crunchy-v2.1.0_windows.exe"
         }
     },
-    "bin": "crunchyroll-go.exe",
+    "bin": [
+        "crunchy-v2.1.0_windows.exe",
+        [
+            "crunchy-v2.1.0_windows.exe",
+            "crunchy"
+        ],
+        [
+            "crunchy-v2.1.0_windows.exe",
+            "crunchyroll-go"
+        ]
+    ],
     "autoupdate": {
         "architecture": {
             "64bit": {
